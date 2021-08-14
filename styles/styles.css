@@ -4,7 +4,7 @@ body {
 }
 
 .title {
-    margin-top: 20%;
+    top: 50%x;
     text-align: center;
     font-family: 'Work Sans', sans-serif;
     font-size: 240px;
