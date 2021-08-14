@@ -4,10 +4,14 @@ body {
 }
 
 .title {
-    top: 50%x;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     text-align: center;
     font-family: 'Work Sans', sans-serif;
     font-size: 240px;
+    font-weight: 500;
 }
 
 .paragraph {
