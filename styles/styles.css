@@ -1,53 +1,65 @@
-:root {
-    --light-background-color: #d4a276;
-    --light-text-primary-color: #000;
-    --light-text-secondary-color: #000c;
-    --light-link-color: #657002;
-
-    --dark-background-color: #111;
-    --dark-text-primary-color: #fff;
-    --dark-text-secondary-color: #fffc;
-    --dark-link-color: #09f;
-}
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
 body {
-    background-color: var(--light-background-color);
-    color: var(--light-text-primary-color);
-    margin: 15%;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    background: teal;
 }
 
-a {
-    color: var(--light-link-color);
+.content {
+    margin: 2rem 260px;
 }
 
-.paragraph {
-    color: var(--light-text-secondary-color);
-}
-
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: var(--dark-background-color);
-        color: var(--dark-text-primary-color);
-    }
-
-    a {
-        color: var(--dark-link-color);
-    }
-
-    .paragraph {
-        color: var(--dark-text-secondary-color);
-    }
-}
-
-.grid-container {
+.project-container {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: repeat(auto-fill, 325px);
+    gap: 32px;
 }
 
-.title {
-    text-align: center;
-    font-family: Garamond, serif;
-    font-size: 15vw;
-    font-weight: 500;
+.project-image {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
+.project-image img {
+
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+}
+
+.project-card {
+    background: white;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.project-card:hover {
+    box-shadow: 0px 4px 20px 0px rgba(34, 68, 123, 0.2);
+    cursor: pointer;
+}
+
+.project-content {
+    padding: 2rem;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    color: #2e4950;
+    display: block;
+    text-decoration: none;
+}
+
+.project-content .project-title {
+    margin: 1rem 0;
+    color: #0f171a;
+}
+
+.project-content .project-description {
+    font-size: 1 rem;
+    line-height: 1.5rem;
+    color: #4a5357;
+}
